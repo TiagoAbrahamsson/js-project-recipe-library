@@ -23,11 +23,27 @@
             </label>
             <label class="filter-label">
                 <input type="radio" name="cuisine" value="Asian" class="filter-input">
-                <span class="filter-button">Japan</span>
+                <span class="filter-button">Asian</span>
+            </label>
+            <label class="filter-label">
+                <input type="radio" name="cuisine" value="Mexican" class="filter-input">
+                <span class="filter-button">Mexican</span>
+            </label>
+            <label class="filter-label">
+                <input type="radio" name="cuisine" value="Middle Eastern" class="filter-input">
+                <span class="filter-button">Middle Eastern</span>
+            </label>
+            <label class="filter-label">
+                <input type="radio" name="cuisine" value="European" class="filter-input">
+                <span class="filter-button">European</span>
             </label>
             <label class="filter-label">
                 <input type="radio" name="cuisine" value="Mediterranean" class="filter-input">
                 <span class="filter-button">Mediterranean</span>
+            </label>
+            <label class="filter-label">
+                <input type="radio" name="cuisine" value="American" class="filter-input">
+                <span class="filter-button">American</span>
             </label>
             
         </div>
@@ -47,15 +63,44 @@
             <label class="sort-label">
                 <input type="radio" name="sort" value="price" class="sort-input">
                 <span class="sort-button">Price</span>
-            </label>            
+            </label> 
+            <button id="random">Random Recipe</button>           
         </div>
     </div>
 </div>
 
+<br>
+<br>
+
 <main>
-  <div class="card" data-type="italian">
+
+    <div class="card" data-type="italian">
+        <img src="https://placehold.co/268x200" alt="Food Image">
+        <div class="card-title">Cheat's cheesy Focaccia</div>
+        <div class="divider"></div>
+        <div class="details">
+            <div class="detail-item">
+                <div class="detail-label">Cuisine:</div>
+                <div class="detail-value">Italian</div>
+            </div>
+            <div class="detail-item">
+                <div class="detail-label">Time:</div>
+                <div class="detail-value">40 minutes</div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="ingredients-title">Ingredients</div>
+        <div class="ingredients-list">
+            500 pack bread mix<br>
+            2 tbsp. olive oil, plus a little extra for drizzling<br>
+            25g parmesan (or vegetarian alternative), grated<br>
+            75g dolcelatte cheese (or vegetarian alternative)
+        </div>
+    </div>
+  
+    <div class="card" data-type="italian">
       <img src="https://placehold.co/268x200" alt="Food Image">
-      <div class="card-title">Cheat's cheesy Focaccia</div>
+      <div class="card-title">Spaghetti Carbonara</div>
       <div class="divider"></div>
       <div class="details">
           <div class="detail-item">
@@ -64,93 +109,70 @@
           </div>
           <div class="detail-item">
               <div class="detail-label">Time:</div>
-              <div class="detail-value">40 minutes</div>
+              <div class="detail-value">30 minutes</div>
           </div>
       </div>
       <div class="divider"></div>
       <div class="ingredients-title">Ingredients</div>
       <div class="ingredients-list">
-          500 pack bread mix<br>
-          2 tbsp. olive oil, plus a little extra for drizzling<br>
-          25g parmesan (or vegetarian alternative), grated<br>
-          75g dolcelatte cheese (or vegetarian alternative)
+          200g spaghetti<br>
+          100g pancetta<br>
+          2 eggs<br>
+          50g parmesan cheese<br>
+          Black pepper
       </div>
   </div>
-
-  <div class="card" data-type="italian">
-    <img src="https://placehold.co/268x200" alt="Food Image">
-    <div class="card-title">Spaghetti Carbonara</div>
-    <div class="divider"></div>
-    <div class="details">
-        <div class="detail-item">
-            <div class="detail-label">Cuisine:</div>
-            <div class="detail-value">Italian</div>
-        </div>
-        <div class="detail-item">
-            <div class="detail-label">Time:</div>
-            <div class="detail-value">30 minutes</div>
-        </div>
-    </div>
-    <div class="divider"></div>
-    <div class="ingredients-title">Ingredients</div>
-    <div class="ingredients-list">
-        200g spaghetti<br>
-        100g pancetta<br>
-        2 eggs<br>
-        50g parmesan cheese<br>
-        Black pepper
-    </div>
-</div>
-
-<div class="card" data-type="indian">
-    <img src="https://placehold.co/268x200" alt="Food Image">
-    <div class="card-title">Chicken Tikka Masala</div>
-    <div class="divider"></div>
-    <div class="details">
-        <div class="detail-item">
-            <div class="detail-label">Cuisine:</div>
-            <div class="detail-value">Indian</div>
-        </div>
-        <div class="detail-item">
-            <div class="detail-label">Time:</div>
-            <div class="detail-value">45 minutes</div>
-        </div>
-    </div>
-    <div class="divider"></div>
-    <div class="ingredients-title">Ingredients</div>
-    <div class="ingredients-list">
-        2 chicken breasts<br>
-        1 cup yogurt<br>
-        1 tbsp garam masala<br>
-        200g tomato sauce<br>
-        1 onion, diced
-    </div>
-</div>
-
-<div class="card" data-type="japanese">
-    <img src="https://placehold.co/268x200" alt="Food Image">
-    <div class="card-title">Sushi Platter</div>
-    <div class="divider"></div>
-    <div class="details">
-        <div class="detail-item">
-            <div class="detail-label">Cuisine:</div>
-            <div class="detail-value">Japanese</div>
-        </div>
-        <div class="detail-item">
-            <div class="detail-label">Time:</div>
-            <div class="detail-value">50 minutes</div>
-        </div>
-    </div>
-    <div class="divider"></div>
-    <div class="ingredients-title">Ingredients</div>
-    <div class="ingredients-list">
-        2 cups sushi rice<br>
-        1 tbsp rice vinegar<br>
-        100g raw salmon<br>
-        1 sheet nori<br>
-        Soy sauce & wasabi
-    </div>
-</div>
+  
+  <div class="card" data-type="indian">
+      <img src="https://placehold.co/268x200" alt="Food Image">
+      <div class="card-title">Chicken Tikka Masala</div>
+      <div class="divider"></div>
+      <div class="details">
+          <div class="detail-item">
+              <div class="detail-label">Cuisine:</div>
+              <div class="detail-value">Indian</div>
+          </div>
+          <div class="detail-item">
+              <div class="detail-label">Time:</div>
+              <div class="detail-value">45 minutes</div>
+          </div>
+      </div>
+      <div class="divider"></div>
+      <div class="ingredients-title">Ingredients</div>
+      <div class="ingredients-list">
+          2 chicken breasts<br>
+          1 cup yogurt<br>
+          1 tbsp garam masala<br>
+          200g tomato sauce<br>
+          1 onion, diced
+      </div>
+  </div>
+  
+  <div class="card" data-type="japanese">
+      <img src="https://placehold.co/268x200" alt="Food Image">
+      <div class="card-title">Sushi Platter</div>
+      <div class="divider"></div>
+      <div class="details">
+          <div class="detail-item">
+              <div class="detail-label">Cuisine:</div>
+              <div class="detail-value">Japanese</div>
+          </div>
+          <div class="detail-item">
+              <div class="detail-label">Time:</div>
+              <div class="detail-value">50 minutes</div>
+          </div>
+      </div>
+      <div class="divider"></div>
+      <div class="ingredients-title">Ingredients</div>
+      <div class="ingredients-list">
+          2 cups sushi rice<br>
+          1 tbsp rice vinegar<br>
+          100g raw salmon<br>
+          1 sheet nori<br>
+          Soy sauce & wasabi
+      </div>
+  </div>
+  
 
 </main>  
 

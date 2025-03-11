@@ -2,7 +2,7 @@ const recipes = [
   {
     id: 1,
     title: "Vegan Lentil Soup",
-    image: "./chicken.webp",
+    image: "./images/avocado.jpg",
     readyInMinutes: 30,
     servings: 4,
     sourceUrl: "https://example.com/vegan-lentil-soup",
@@ -26,7 +26,7 @@ const recipes = [
   {
     id: 2,
     title: "Vegetarian Pesto Pasta",
-    image: "avocado.jpg",
+    image: "./images/avocado.jpg",
     readyInMinutes: 25,
     servings: 2,
     sourceUrl: "https://example.com/vegetarian-pesto-pasta",
@@ -48,7 +48,7 @@ const recipes = [
   {
     id: 3,
     title: "Gluten-Free Chicken Stir-Fry",
-    image: "./chicken.webp",
+    image: "./images/avocado.jpg",
     readyInMinutes: 20,
     servings: 3,
     sourceUrl: "https://example.com/gluten-free-chicken-stir-fry",
@@ -74,7 +74,7 @@ const recipes = [
   {
     id: 4,
     title: "Dairy-Free Tacos",
-    image: "avocado.jpg",
+    image: "./images/avocado.jpg",
     readyInMinutes: 15,
     servings: 2,
     sourceUrl: "https://example.com/dairy-free-tacos",
@@ -94,7 +94,7 @@ const recipes = [
   {
     id: 5,
     title: "Middle Eastern Hummus",
-    image: "./chicken.webp",
+    image: "./images/avocado.jpg",
     readyInMinutes: 10,
     servings: 4,
     sourceUrl: "https://example.com/middle-eastern-hummus",
@@ -113,10 +113,9 @@ const recipes = [
   {
     id: 6,
     title: "Quick Avocado Toast",
-    image: "./chicken.webp",
+    image: "./images/avocado.jpg",
     readyInMinutes: 5,
     servings: 1,
-    image: "avocado.jpg",
     sourceUrl: "images/avocado.jpg",
     diets: ["vegan"],
     cuisine: "Mediterranean",
@@ -132,12 +131,11 @@ const recipes = [
   {
     id: 7,
     title: "Beef Stew",
-    image: "./chicken.webp",
+    image: "./images/avocado.jpg",
     readyInMinutes: 90,
     servings: 5,
-    image: "avocado.jpg",
     sourceUrl: "https://example.com/beef-stew",
-    diets: [],
+    diets: [""],
     cuisine: "European",
     ingredients: [
       "beef chunks",
@@ -167,6 +165,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const recipesContainer = document.querySelector("main");
   const filterInputs = document.querySelectorAll(".filter-input");
   const sortInputs = document.querySelectorAll(".sort-input");
+  const random = document.getElementById("random");
  
 
   // Render recipes
@@ -225,6 +224,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   filterInputs.forEach(input => input.addEventListener("change", filterAndSortRecipes));
   sortInputs.forEach(input => input.addEventListener("change", filterAndSortRecipes));
+
+  const showRandomRecipe = () => {
+    const randomIndex = Math.floor(Math.random() * recipes.length);
+    const randomRecipe = recipes[randomIndex];
+    renderRecipes([randomRecipe]);
+  };
+  random.addEventListener("click", showRandomRecipe);
 });
 
 

@@ -124,6 +124,23 @@ font-weight: 700;
   border-color: #FF6589;
 }
 
+/* From Uiverse.io by levxyca */ 
+button {
+  font-size: 1.5rem;
+  color: #FF6589;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid #FF6589;
+  background: white;
+  box-shadow: 3px 3px #FF6589;
+  cursor: pointer;
+}
+
+button:active {
+  box-shadow: none;
+  transform: translate(3px, 3px);
+}
+
 
 main {
   display: flex;
@@ -133,7 +150,7 @@ main {
   padding: 42px;
 }
 
-.card {
+.recipe-card {
   width: 300px;
   height: 621px;
   padding: 16px 16px 24px 16px;
