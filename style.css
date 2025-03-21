@@ -218,3 +218,13 @@ main {
   font-size: 16px;
   font-weight: 500;
 }
+
+@media (max-width: 768px) {
+  main {
+    padding: 20px;
+  }
+
+  .recipe-card {
+    width: 100%;
+  }
+}
